@@ -2,7 +2,10 @@
 
 This project is a template for a CI-enabled (and unit testable) Arduino project of your own.
 
-[![Build Status](https://travis-ci.org/TomohiroHayashi/arduino_test1.svg?branch=master)](https://travis-ci.org/TomohiroHayashi/arduino_test1)
+Platform | CI Status
+---------|:---------
+Linux    | [![Linux Build Status](https://travis-ci.org/TomohiroHayashi/arduino_test1.svg?branch=master)](https://travis-ci.org/TomohiroHayashi/arduino_test1)
+Windows  | [![Windows Build status](https://ci.appveyor.com/api/projects/status/knwkcll4bgv0gu8c/branch/master?svg=true)](https://ci.appveyor.com/project/TomohiroHayashi/arduino-test1/branch/master)
 
 ### Features
 
