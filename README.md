@@ -2,6 +2,7 @@
 
 This project is a template for a CI-enabled (and unit testable) Arduino project of your own.
 
+[![Build Status](https://travis-ci.org/TomohiroHayashi/arduino_test1.svg?branch=master)](https://travis-ci.org/TomohiroHayashi/arduino_test1)
 
 ### Features
 
