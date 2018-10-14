@@ -1,0 +1,29 @@
+# Note that ci_config_spec.rb has tests for this file's contents
+# some of the defines were guessed from
+#   https://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems
+
+packages:
+  # arduino:xxx are builtin, we don't need to include them here
+  adafruit:avr:
+    url: https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+
+platforms:
+  uno:
+    board: arduino:avr:uno
+    package: arduino:avr
+    gcc:
+      features:
+      defines:
+        - __AVR_ATmega328P__
+      warnings:
+      flags:
+
+compile:
+  libraries: ~
+  platforms:
+    - uno
+
+unittest:
+  libraries: ~
+  platforms:
+    - uno
