@@ -13,7 +13,6 @@ jobs:
             # ensure the Arduino installation -- creates the Library directory
             bundle exec ensure_arduino_installation.rb
             # manually install the custom version you need
-            #git clone https://repository.com/custom_library_repo.git
-            #mv custom_library_repo /path/to/Arduino/libraries
+            #cp -R ~/project/externals/* ~/Arduino/libraries/project/
             # now run CI
             bundle exec arduino_ci_remote.rb
