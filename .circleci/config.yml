@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    machine: true    
+    steps:
+      - checkout
+
+      - run:
+          name: install and execute
+          command: |
+            bundle install
+            bundle exec arduino_ci_remote.rb
