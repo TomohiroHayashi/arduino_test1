@@ -12,7 +12,11 @@ jobs:
             bundle install
             # ensure the Arduino installation -- creates the Library directory
             bundle exec ensure_arduino_installation.rb
+            # manually install the custom version
+            mkdir -p ~/Arduino/libraries
+            mv ~/project/externals/* ~/Arduino/libraries/
             # manually install the custom version you need
-            #cp -R ~/project/externals/* ~/Arduino/libraries/project/
+            git clone https://github.com/balp/arduino-mock.git ~/arduino-mock
+            mv ~/arduino-mock/* ~/Arduino/libraries/
             # now run CI
             bundle exec arduino_ci_remote.rb
