@@ -52,7 +52,7 @@ class TwoWire : public Stream
       txBufferIndex = 0;
       txBufferLength = 0;
     }
-    void beginTransmission(int) { beginTransmission((uint8_t)address); }
+    void beginTransmission(int address) { beginTransmission((uint8_t)address); }
     uint8_t endTransmission(void) { return endTransmission(true); }
     uint8_t endTransmission(uint8_t sendStop) {
       uint8_t ret = 0;
