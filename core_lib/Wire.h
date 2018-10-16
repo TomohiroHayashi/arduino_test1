@@ -121,7 +121,7 @@ class TwoWire : public Stream
     }
     virtual int available(void) {
       //return rxBufferLength - rxBufferIndex;
-      reuturn 1;
+      return 1;
     }
     virtual int read(void) {
       int value = -1;      
