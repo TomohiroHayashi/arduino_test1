@@ -144,6 +144,6 @@ class TwoWire : public Stream
     //using Print::write;
 };
 
-TwoWire Wire;
+extern TwoWire Wire;
 
 
