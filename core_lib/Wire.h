@@ -26,7 +26,7 @@ class TwoWire : public Stream
     //static void onRequestService(void);
     //static void onReceiveService(uint8_t*, int);
   public:
-    TwoWire();
+    TwoWire() {}
     void begin() {
       //rxBufferIndex = 0;
       //rxBufferLength = 0;
