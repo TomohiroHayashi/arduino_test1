@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include <VL53L0X.h>
+#include <wiring_private.h>
 #include "do-something.h"
 int doSomething(void) {
   millis();  // this line is only here to test that we're able to refer to the builtins
