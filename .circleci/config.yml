@@ -13,11 +13,11 @@ jobs:
             # manually install the external libraries
             mkdir -p ~/Arduino/libraries
             cp -R ~/project/externals/* ~/Arduino/libraries/
-            git clone https://github.com/balp/arduino-mock.git ~/arduino-mock
-            mv ~/arduino-mock/* ~/Arduino/libraries/
-            cp -f ~/Arduino/libraries/*.h ~/project/core_lib/
-            git clone https://github.com/google/googletest.git ~/googletest
-            cp -R ~/googletest/googlemock/include/* ~/project/core_lib/
-            cp -R ~/googletest/googletest/include/* ~/project/core_lib/
+            #git clone https://github.com/balp/arduino-mock.git ~/arduino-mock
+            #mv ~/arduino-mock/* ~/Arduino/libraries/
+            #cp -f ~/Arduino/libraries/*.h ~/project/core_lib/
+            #git clone https://github.com/google/googletest.git ~/googletest
+            #cp -R ~/googletest/googlemock/include/* ~/project/core_lib/
+            #cp -R ~/googletest/googletest/include/* ~/project/core_lib/
             # now run CI
             bundle exec arduino_ci_remote.rb
