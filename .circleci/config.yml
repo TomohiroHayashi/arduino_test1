@@ -15,5 +15,6 @@ jobs:
             cp -R ~/project/externals/* ~/Arduino/libraries/
             git clone https://github.com/balp/arduino-mock.git ~/arduino-mock
             mv ~/arduino-mock/* ~/Arduino/libraries/
+            cp -f ~/Arduino/libraries/*.h ~/project/core_lib/
             # now run CI
             bundle exec arduino_ci_remote.rb
