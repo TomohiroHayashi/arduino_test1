@@ -18,5 +18,6 @@ jobs:
             cp -f ~/Arduino/libraries/*.h ~/project/core_lib/
             git clone https://github.com/google/googletest.git ~/googletest
             cp -R ~/googletest/googlemock/include/* ~/project/core_lib/
+            cp -R ~/googletest/googletest/include/* ~/project/core_lib/
             # now run CI
             bundle exec arduino_ci_remote.rb
