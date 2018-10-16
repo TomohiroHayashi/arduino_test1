@@ -12,7 +12,7 @@ jobs:
             bundle exec ensure_arduino_installation.rb
             # manually install the external libraries
             mkdir -p ~/Arduino/libraries
-            mv ~/project/externals/* ~/Arduino/libraries/
+            cp -R ~/project/externals/* ~/Arduino/libraries/
             git clone https://github.com/balp/arduino-mock.git ~/arduino-mock
             mv ~/arduino-mock/* ~/Arduino/libraries/
             # now run CI
